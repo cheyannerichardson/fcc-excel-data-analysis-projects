@@ -1,27 +1,16 @@
-#Excel Payroll Tracker – Complete Step-by-Step Guide
-#Burrows Island Light Stand Restoration Project
-A fully functional Excel-based payroll and expense tracking system  
-Inspired by FreeCodeCamp’s beginner-friendly tutorials, it’s approachable and easy to follow.
-This guide walks you through worksheet setup -- from contractor data to automate summary formulas.
+# Excel Payroll Tracker – Complete Step-by-Step Guide
+### Burrows Island Light Stand Restoration Project
+
+A fully functional Excel-based payroll and expense tracking system inspired by FreeCodeCamp’s beginner-friendly tutorials. This guide walks you through worksheet setup -- from contractor data to automate summary formulas.
 
 ## 📘 Project Overview
+
 This project demonstrates how to:
-  -Organize payroll data for multiple contractors
-  -Use Excel formulas for automation ('SUMIF', VLOOKUP', 'SUMPRODUCT')
-  -Create validatinon lists for consistent data entry
-  -Build a summary dashboard for total payroll hours and expenses
+  - Organize payroll data for multiple contractors
+  - Use Excel formulas for automation ('SUMIF', VLOOKUP', 'SUMPRODUCT')
+  - Create validatinon lists for consistent data entry
+  - Build a summary dashboard for total payroll hours and expenses
 
-##🖼️ Preview
-
-(Insert screenshots or GIFs of your Excel workbook here — for example, a summary dashboard or contractor sheet.)
-
-Example placeholders:
-
-text
-📊 Contractors Sheet – Name, Rate, Email, Hours  
-📋 Expenses Sheet – Costs by Phase, Contractor, and Materials 
-    Data Input - 
-💰 Summary Sheet – Total Hours, Payroll, Average Rate  
  
 ## 🗂️ Table of Contents  
 1. [Excel Basics Every Beginner Needs](#1-excel-basics-every-beginner-needs)  
@@ -30,8 +19,7 @@ text
 4. [Expenses Sheet Setup](#4-expenses-sheet-setup)  
 5. [Summary Sheet Setup](#5-summary-sheet-setup)  
 6. [Key Formulas – Copy & Paste](#6-key-formulas--copy--paste-ready)  
-7. [Common Errors & Fixes](#7-common-errors--fixes)  
-8. [Download the Template](#8-download-the-template)
+7. [Expanded Payroll Framework for Restoration Projects](#7-expanded-payroll-framework-for-restoration-projects)
 
 ***
 
@@ -132,8 +120,9 @@ Source: `Restoration,Welding,Painting,Electrical,Carpentry,Masonry`
 
 'Total Expenses
 =SUM('Expenses'!G:G)
+```
 
-## 🏛️ Expanded Payroll Framework for Restoration Projects
+## 7. Expanded Payroll Framework for Restoration Projects
 
 ### 🔹 Recommended Enhancements
 
@@ -162,9 +151,3 @@ permit reference numbers, ensures that the restoration effort meets state and fe
 
 Together these would expand a basic Excel payroll sheet into a comprehensive financial and ocmplaince management tool [purpseo-built for 
 the complex conditions of hertijage restoration projects.
-
-
-
-
-
-
