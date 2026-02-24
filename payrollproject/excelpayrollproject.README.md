@@ -13,18 +13,18 @@ This project demonstrates how to:
 
  
 ## 🗂️ Table of Contents  
-## 📘 Project Overview
-- [Project Context: Burrow Island Light Stand](#project-context-burrow-island-light-stand)  
+#### Project Overview
+- [Project Context](#project-contex)  
 
-## ⚙️ System Setup and Instructions
+#### System Setup and Instructions
 - [Excel Basics Every Beginner Needs](#1-excel-basics-every-beginner-needs)  
 - [Contractors Sheet Setup](#2-contractors-sheet-setup)  
-- [Data Input Sheet Setup](#3-data-input-sheet-setup)  
-- [Expenses Sheet Setup](#4-expenses-sheet-setup)  
+- [Expenses Sheet Setup](#3-expenses-sheet-setup)  
+- [Data Input Sheet Setup](#4-data-input-sheet-setup) 
 - [Summary Sheet Setup](#5-summary-sheet-setup)  
 - [Key Formulas – Copy & Paste](#6-key-formulas--copy--paste-ready)  
 
-## 🧱 Application and Use Cases
+#### Application and Use Cases
 - [Expanded Payroll Framework for Restoration Projects](#7-expanded-payroll-framework-for-restoration-projects)  
 - [Applying the System to Historical Restoration](#applying-the-system-to-historical-restoration)  
 - [How to Use This Workbook for Your Own Projects](#how-to-use-this-workbook-for-your-own-projects)  
@@ -182,6 +182,28 @@ These project enhancements would make the payroll tracker especially useful for 
 Together, these additions expand a simple Excel payroll sheet into a comprehensive financial, compliance, and project‑tracking tool, purpose‑built for the complex conditions of heritage restoration. For the Burrows Island Light project, data management tools like this not only streamline administrative work but also strengthen stewardship of public funds, improve accountability across contractor teams, and preserve the integrity of one of Washington’s maritime landmarks. 
 
 ## How to Use This Workbook for Your Own Projects
-A data management system like the Burrows Island Light Station Payroll Tracker demonstrates how spreadsheet tools can organize, record, and analyze complex restoration workflows. Using the Contractors Sheet, teams can document each contractor’s trade, hourly rate, and contact information—all essential for transparency in grant‑funded projects. The Expenses Sheet links labor to specific site areas and materials, providing a clear record of costs for tasks such as masonry stabilization or roof replacement. The Data Input Sheet simplifies daily logging through dropdown menus and standardized job types, ensuring consistent recordkeeping across all restoration phases. Finally, the Summary Sheet aggregates payroll, expenses, and performance metrics, giving managers instant visibility into total labor costs, hours worked, and average rates. For a restoration project like Burrows Island Light Stand, this structured approach makes it easier to track qualified contractors, manage federally or state‑funded grants, and create accurate audit‑ready reports. By introducing this level of precision and accountability, even small preservation teams can manage heritage projects efficiently while maintaining compliance with historical and financial documentation standards.
 
-In summary, this project integrates applied Excel-based data management practices with the operational requirements of heritage preservation, demonstrating how structured digital workflows can enhance fiscal oversight, regulatory compliance, and the sustainable management of cultural restoration initiatives.
+A data management system like the **Burrows Island Light Station Payroll Tracker** demonstrates how spreadsheet tools can organize, record, and analyze complex restoration workflows.
+
+**Contractors Sheet**: Teams can document each contractor’s trade, hourly rate, and contact information — all essential for transparency in grant-funded projects.
+
+**Expenses Sheet**: This sheet links labor to specific site areas and materials, providing a clear record of costs for tasks such as masonry stabilization or roof replacement.
+
+**Data Input Sheet**: Daily logging is simplified through dropdown menus and standardized job types, ensuring consistent recordkeeping across all restoration phases.
+
+**Summary Sheet**: The summary aggregates payroll, expenses, and performance metrics, giving managers instant visibility into total labor costs, hours worked, and average rates.
+
+---
+
+For a restoration project like **Burrows Island Light Station**, this structured approach makes it easier to:
+
+- Track qualified contractors  
+- Manage federally or state-funded grants  
+- Create accurate, audit-ready reports  
+
+By introducing this level of precision and accountability, even small preservation teams can manage heritage projects efficiently while maintaining compliance with historical and financial documentation standards.
+
+---
+
+### Summary
+This project integrates applied, Excel-based data management practices with the operational needs of heritage preservation. It shows how structured digital workflows enhance fiscal oversight, regulatory compliance, and sustainable management of cultural restoration initiatives.
