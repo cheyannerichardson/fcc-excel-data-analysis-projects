@@ -1,6 +1,6 @@
 # Stanley Park Seawall Community Feedback & Impact Gradebook
 
-A data-driven Excel evaluation tool for assessing **seven seawall design proposals** across **eleven impact metrics**, complete with weighted scoring, ranking logic, and visualization tools for transparent community planning. The **Stanley Park Seawall** faces complex challenges, from erosion and sea-level rise to balancing recreation and habitat protection. This project delivers a structured Excel system that helps stakeholders evaluate multiple design proposals using a clear and replicable scoring method.
+A freeCodeCamp beginner-friendly project demonstrating how to build a weighted gradebook in Excel to organize and evaluate community feedback and impact metrics for the Stanley Park Seawall redevelopment project using real-world environmental, social, and design data. The **Stanley Park Seawall** faces complex challenges, from erosion and sea-level rise to balancing recreation and habitat protection. This project delivers a structured Excel system that helps stakeholders evaluate multiple design proposals using a clear and replicable scoring method.
 
 ---
 
@@ -181,6 +181,58 @@ This ensures **unique ranking** even if two weighted scores are identical.
 
 This section dynamically displays the highest-ranked projects and their corresponding weighted scores.
 
+## Project Rankings
+![Clustered Column Chart](chart-screenshot.png)
+*Side-by-side comparison of 8 projects across 12 ranking criteria*
+
+## Project Proposal Rankings
+
+Create a **Clustered Bar Chart** to compare project proposals:
+
+### Step-by-Step (Excel)
+
+1. **Data Setup:**
+
+A2:A8 = Project proposal names
+O2:O8 = Rank numbers (1 = best)
+
+text
+
+2. **Insert Chart:**
+
+Select A1:O8 → Insert → Charts → Clustered Bar (2-D Bar section)
+
+text
+
+3. **Fix Data Series:**
+
+Right-click chart → Select Data:
+• Series Name: Rank
+• Series Values: ='Stanley Park Seawall'!$O$2:$O$8
+• Horizontal Axis: ='Stanley Park Seawall'!$A$2:$A$8
+
+text
+
+4. **Format:**
+
+• Reverse vertical axis (Rank 1 at top)
+• Tilt project names -45° for readability
+
+text
+
+### Result
+Horizontal bars showing rank lengths, project names on left axis. Perfect for proposal evaluation dashboard.
+
+![Project Rankings Bar Chart](chart-screenshot.png)
+*Top-ranked proposals have longest bars*
+ 
+Step 8: Final Validation Checklist
+✅ All these must be true:
+[ ] M20 shows: 1.00 (weights total)
+[ ] Column M: 3.8-4.3 range (averages)
+[ ] Column N: 3.8-4.3 range (weighted)
+[ ] Column O: 1,2,3,4,5,6,7 (sequential ranks)
+
 ---
 
 ## ## Understanding the Scores and Rankings
@@ -200,13 +252,7 @@ After entering scores and formulas, Excel will:
 - Calculate **Average & Weighted Scores** for each proposal.  
 - Automatically rank all seven proposals based on total weighted score.  
 
-### Recommended Chart Options
-- Bar chart comparing **Weighted Scores** across proposals.  
-- Leaderboard-style horizontal chart with **Rank (O)** values.  
-- Optional radar/spider chart showing performance by metric.
-
 ---
-Sure! Here’s the full **Markdown version** of that expanded, polished section for your GitHub README. It keeps the tone professional while connecting the Stanley Park Seawall project to general urban planning applications.  
 
 ***
 
