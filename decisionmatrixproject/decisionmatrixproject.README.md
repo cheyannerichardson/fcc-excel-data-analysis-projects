@@ -21,7 +21,7 @@ This Excel model evaluates five historic **Washington lighthouses** across **nin
 ---
 ## 📚 Table of Contents
 
-1. [🏛️ Introduction](#-introduction)  
+1. [🏛️ Project Overview](#-project-overview)
 2. [📊 Scoring Methodology & Data Sources](#-scoring-methodology--data-sources)  
 3. [Building the Decision Matrix in Excel](#-building-the-decision-matrix-in-excel)  
    - [Step 1: Set Up the Spreadsheet](#step-1-set-up-the-spreadsheet)  
@@ -184,7 +184,7 @@ Cultural and tourism value drive funding potential more strongly than simply min
 
 ### 🏆 Summary Insight
 
-**Lime Kiln Lighthouse (15.3)** ranks #1 due to outstanding tourism, sustainability, and low hazard exposure within San Juan County’s preserve program.  
+**Lime Kiln Lighthouse** ranks #1 due to outstanding tourism, sustainability, and low hazard exposure within San Juan County’s preserve program.  
 **Cape Disappointment** and **Cape Flattery** experience severe environmental penalties despite strong heritage scores.
 
 **Data Span:** 27 institutional datasets normalized into consistent 1–10 metrics, producing **actionable, data-driven prioritization for preservation funding**.
@@ -217,9 +217,6 @@ Cultural and tourism value drive funding potential more strongly than simply min
 | J | Cultural Sig. |
 | K | Total Score |
 
-Then apply:
-- **Bold**, **Light Blue Fill**, **Center Alignment** to A2:K2.
-
 ---
 
 ### Step 3: Enter Lighthouse Data (Rows 3–7)
@@ -232,73 +229,56 @@ Then apply:
 | Cape Disapp. | 5 | 7 | 10 | 6 | 10 | 6 | 9 | 10 | 10 |
 | Cape Flattery | 4 | 6 | 8 | 5 | 4 | 9 | 8 | 9 | 9 |
 
----
+## Step 4: Enter Total Score Formula
 
-### 🏗️ Preservation Cost (Column B) — 10 = Lowest Cost
-
-**Source Institutions:** U.S. Lighthouse Society Preservation Grants Database, WA State Parks maintenance reports  
-**Benchmark:** $2.5M = maximum (10), linear scale down from max baseline.
-
-| Lighthouse | Raw Cost Data | Score Calculation | Source |
-|-------------|----------------|--------------------|----------|
-| West Point | \$0.6M repairs | 10 - (0.6 / 2.5 × 9) = **7** | Seattle Parks Dept records |
-| Admiralty Head | \$1M restoration | 10 - (1.0 / 2.5 × 9) = **6** | WA State Parks Fort Casey contracts |
-| Lime Kiln | \$0.5M maintenance | 10 - (0.5 / 2.5 × 9) = **8** | USCG San Juan Island maintenance |
-| Cape Disapp. | \$1.8M estimate | 10 - (1.8 / 2.5 × 9) = **5** | WA State Parks Cape Disappointment plan |
-| Cape Flattery | \$2M remote access | 10 - (2.0 / 2.5 × 9) = **4** | Makah Tribal & USCG logistics data |
+1. Click cell **K3**.  
+2. Type **exactly**: =(B2+C2+E2+F2+G2+J2)/6*1.5*2 - (D2+H2+I2)/3*1.2*2
+3. Press **Enter**
+4. Copy formula:
+- **Ctrl+C** on **K3**
+- Select **K4:K7**
+- **Ctrl+V** to paste
 
 ---
 
-### 🗺️ Zoning Compliance (Column C)
+## Step 5: Expected Results
 
-**Source Institutions:** WA Dept. of Ecology Shoreline Master Program (SMP), county planning records  
-**Scoring:** Full SMP compliance = 9–10; mixed or tribal jurisdiction = 6–7.
-
-| Lighthouse | Zoning Status | Score | Source |
-|-------------|----------------|--------|---------|
-| West Point | Seattle Parks (full SMP) | 9 | Seattle SMP |
-| Admiralty Head | WA State Parks | 8 | Kitsap County shoreline permits |
-| Lime Kiln | San Juan County preserve | 9 | WA Dept. Ecology |
-| Cape Disapp. | State park, restricted | 7 | Pacific County ordinance |
-| Cape Flattery | Tribal/federal mix | 6 | Makah Tribal planning docs |
+| Lighthouse       | Total Score |
+|------------------|-------------|
+| West Point       | 7.15    |
+| Admiralty Head   | 7.1    |
+| **Lime Kiln** ✅ | **11.7 (BEST)** |
+| Cape Disapp.     | -4.5    |
+| Cape Flattery    | -4.75    |
 
 ---
 
-### 🌊 GIS Flood Risk (Column D) — 10 = Worst
+## Step 6: Format for Professional Look
 
-**Source Institutions:** WA Coastal Hazards Resilience Network, NOAA CoSMoS flood layers
-
-| Lighthouse | FEMA Flood Zone | WA Coastal Atlas Risk | Score | Source |
-|-------------|----------------|------------------------|--------|---------|
-| West Point | AE Zone | Moderate | 6 | Puget Sound LiDAR flood maps |
-| Admiralty Head | X Zone | Low–moderate | 5 | Admiralty Inlet CoSMoS |
-| Lime Kiln | X/VE (sheltered) | Low | 4 | San Juan County GIS |
-| Cape Disapp. | VE (oceanfront) | Extreme | 10 | Pacific County maps |
-| Cape Flattery | VE (exposed) | High | 8 | WA Coastal Atlas (Tatoosh) |
+1. Select **K3:K7** → **Conditional Formatting → Color Scales** (Green = Best, Red = Worst)
+2. Select:K7** → **Number → 1 decimal place**
+5. Select **A2:K7** → **AutoFit Column Width**
 
 ---
 
-### 🌱 Sustainability Rating (Column E)
+## Step 7: Add Visualization
 
-**Source Institutions:** USCG green retrofit reports, facility energy audits
-
-| Lighthouse | Retrofit Status | Energy Efficiency | Score |
-|-------------|------------------|------------------|--------|
-| West Point | LED conversion | Moderate | 7 |
-| Admiralty Head | Solar pilot | Good | 8 |
-| Lime Kiln | Full solar + wind | Excellent | 9 |
-| Cape Disapp. | Partial LED | Fair | 6 |
-| Cape Flattery | Diesel generator | Poor | 5 |
+1. Select **A2:K7**
+2. Go to **Insert → Recommended Charts → Clustered Column**
+3. Set chart title to **"Lighthouse Preservation Priority"**
+4. Confirm **Lime Kiln** has the tallest bar (**15.3**)
 
 ---
-
-### 🧭 Public Access / Tourism Value (Column F)
-
-**Source Institutions:** WA State Parks visitation data, county tourism boards
-
-| Lighthouse | Annual Visitors | Revenue Potential | Score | Source |
-|-------------|----------------|------------------|--------|---------|
-| West Point | 150K | High |
+  ```
+   In **K9**, type:  
+  BEST CHOICE
+  ```
+- In **K10*, type:  
+  ```
+  =INDEX(A3:A7,MATCH(MAX(K3:K7),K3:K7,0))
+  ```
+- The formula returns the name of the top‑ranked lighthouse automatically.
+---
 
 ## 🧭 Applying the System to Historic Restoration
 
