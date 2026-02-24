@@ -9,12 +9,12 @@ These projects demonstrate how Excel evolves from a simple spreadsheet tool into
 ---
 
 ## Table of Contents  
-1. [Payroll Project]([#1-payroll-project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/payrollproject))  
+1. [Payroll Project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/payrollproject))  
 2. [Gradebook Project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/gradebookproject)  
-3. [Sales Database Project]([#3-sales-database-project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/salesdatabaseproject))  
+3. [Sales Database Project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/salesdatabaseproject))  
 4. [Decision Matrix Project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/decisionmatrixproject)  
-5. [Traffic Inventory Project]([#5-traffic-inventory-project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/trafficinventoryproject))  
-6. [Problem Solving Project]([#6-problem-solving-project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/problemsolvingproject)  
+5. [Traffic Inventory Project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/trafficinventoryproject))  
+6. [Problem Solving Project](https://github.com/cheyannerichardson/fcc-excel-data-analysis-projects/tree/main/problemsolvingproject)  
 
 ---
 ## Project Overview
