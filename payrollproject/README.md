@@ -1,54 +1,49 @@
-# Excel Payroll Tracker – Complete Step-by-Step Guide
-### Burrows Island Light Stand Restoration Project
+# Burrows Island Light Station Multi-Source Payroll Analytics Dashboard
 
-The Burrows Island Light Station near Anacortes, Washington is currently being restored through the efforts of the Keepers of the Burrows Island Light Station, preservation agencies, and skilled contractors. This Excel-based payroll and expense tracker models how structured data management can support heritage restoration projects by tracking labor, materials, and costs across multiple project phases. Such tools simplify coordination, improve transparency for grant compliance, and strengthen accountability among stakeholders. All figures used are hypothetical and for educational purposes only.
+**ETL → KPI Dashboard**: Aggregates contractor, expense, and input data into automated performance metrics, cost allocation, and compliance reporting for Burrows Island Light Station restoration project.
 
-## 📘 Project Overview
+## Dashboard Preview
 
-This project demonstrates how to:
-  - Organize payroll data for multiple contractors
-  - Use Excel formulas for automation ('SUMIF', VLOOKUP', 'SUMPRODUCT')
-  - Create validatinon lists for consistent data entry
-  - Build a summary dashboard for total payroll hours and expenses
+<img width="768" height="402" alt="image" src="https://github.com/user-attachments/assets/9811b6a3-08ca-4970-a402-d5ea1fa9fa3d" />
 
- 
-## 🗂️ Table of Contents  
+**Key Metrics Delivered:**  
+
+    **Total Hours** | **Total Payroll** | **Average Rate** | **Total Expenses** | **Contractor Hours** | **Contractor Paid** | **Avg Hours/Job**
+
+## Skills Demonstrated
+
+- **ETL Pipeline**: Multi-sheet integration (Contractors + Expenses + Data Input)
+- **KPI Dashboards**: SUMIF/SUMPRODUCT for contractor rankings and totals
+- **Data Validation**: Dropdown lists eliminate entry errors
+- **Dynamic Reporting**: UNIQUE arrays, VLOOKUP automation, real-time updates
+
+## Business Case
+
+**Raw Data**: Burrows Island restoration project payroll and expenses across multiple contractors and phases  
+**Objective**: Build automated KPI dashboard for grant compliance and cost visibility  
+**Solution**: 4 integrated sheets → real-time contractor performance and phase analysis  
+**Outcome**: Audit-ready reporting with zero manual calculation errors
+
+## Table of Contents  
 #### Project Overview
-- [Project Context](#project-contex)  
+- [Dashboard Preview](#dashboard-preview)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Business Case](#business-case)  
 
 #### System Setup and Instructions
-- [Excel Basics Every Beginner Needs](#1-excel-basics-every-beginner-needs)  
-- [Contractors Sheet Setup](#2-contractors-sheet-setup)  
-- [Expenses Sheet Setup](#3-expenses-sheet-setup)  
-- [Data Input Sheet Setup](#4-data-input-sheet-setup) 
-- [Summary Sheet Setup](#5-summary-sheet-setup)  
-- [Key Formulas – Copy & Paste](#6-key-formulas--copy--paste-ready)  
+- [Contractors Sheet Setup](#1-contractors-sheet-setup)  
+- [Expenses Sheet Setup](#2-expenses-sheet-setup)  
+- [Data Input Sheet Setup](#3-data-input-sheet-setup) 
+- [KPI Dashboard](#4-KPI-dashboard)
+- [Key Formulas – Copy & Paste](#5-key-formulas--copy--paste-ready)  
 
 #### Application and Use Cases
-- [Expanded Payroll Framework for Restoration Projects](#7-expanded-payroll-framework-for-restoration-projects)  
-- [Applying the System to Historical Restoration](#applying-the-system-to-historical-restoration)  
-- [How to Use This Workbook for Your Own Projects](#how-to-use-this-workbook-for-your-own-projects)  
-
-## Project Contex 
-The Burrows Island Light Station, located just west of Anacortes, Washington, is a historically significant beacon first illuminated in 1906 to aid naval and commercial vessels navigating Rosario Strait. Today, its conservation is being led by the Keepers of the Burrows Island Light Station in partnership with local preservation groups, the Washington State Department of Archaeology and Historic Preservation, and specialized restoration contractors. This initiative focuses on structural stabilization, weatherproofing, and faithfully restoring the lighthouse and its surrounding buildings to preserve maritime heritage for future generations.
-
-In a project of this scope, a payroll and expense tracking system provides a vital layer of organization and accountability. Historical restoration often involves multiple contractors and specialists—such as carpenters, stonemasons, electricians, and heritage consultants—working across distinct project phases. By using an organized Excel-based payroll tracker, managers can efficiently log labor hours, categorize work types, and track materials for each site area or task. This enables accurate cost estimation, phase-based budgeting, and transparent recordkeeping that aligns with grant eligibility and reporting requirements for heritage funding.
-
-Beyond payroll management, modern data tools like this one streamline communication among teams, simplify compliance documentation, and ensure spending aligns with preservation priorities. They transform what might otherwise be a complex paper-based workflow into a clear, actionable dataset—helping restoration organizations like those at Burrows Island Light demonstrate financial integrity, plan future maintenance more effectively, and protect their legacy through responsible use of resources.
-
+- [Expanded Payroll Framework for Restoration Projects](#7-expanded-payroll-framework-for-restoration-projects)
+  
 ***
 
-## 1. Excel Basics Every Beginner Needs
-- **Cell:** One box (A1, B2, C3)  
-- **Column:** Vertical (A, B, C …)  
-- **Row:** Horizontal (1, 2, 3 …)  
-- **Sheet:** Each tab at the bottom (e.g., “Sheet1”)  
-- **Formula:** Starts with `=` sign  
-- **Range:** Group of cells (e.g., `B:B`)
-
-***
-
-## 2. Contractors Sheet Setup  
+## 1. Contractors Sheet Setup  
+**Purpose**: Master reference for lookup and validation
 
 ### Step 1: Create the Sheet  
 Right‑click sheet tab → **Rename → Contractors**  
@@ -70,7 +65,8 @@ Merge and center `A1:D1`
 
 ***
 
-## 3. Expenses Sheet Setup  
+## 2. Expenses Sheet Setup  
+**Granular cost tracking by phase and material**
 
 **Sheet Name:** `Expenses`
 
@@ -86,7 +82,9 @@ Merge and center `A1:D1`
 
 ***
 
-## 4. Data Input Sheet Setup  
+## 3. Data Input Sheet Setup
+**Primary transactional data with validation**
+
 **Sheet Name:** `Data Input`
 
 | Date | Contractor | Hours Worked | Hourly Rate | Job Type | Notes |
@@ -103,7 +101,9 @@ Source: `Restoration,Welding,Painting,Electrical,Carpentry,Masonry`
 
 ***
 
-## 5. Summary Sheet Setup  
+## 4. KPI Dashboard 
+**Summary Sheet** - Real-time aggregation across all data sources:
+
 **Sheet Name:** `Summary`
 
 | Metric | Formula |
@@ -120,7 +120,7 @@ Source: `Restoration,Welding,Painting,Electrical,Carpentry,Masonry`
 
 ***
 
-## 6. Key Formulas – Copy & Paste Ready  
+## 5. Key Formulas – Copy & Paste Ready  
 ```excel
 'Payroll Totals
 =SUM('Data Input'!C:C)
@@ -136,10 +136,11 @@ Source: `Restoration,Welding,Painting,Electrical,Carpentry,Masonry`
 'Total Expenses
 =SUM('Expenses'!G:G)
 ```
+## Expanded Payroll Framework for Restoration Projects
 
-## 7. Expanded Payroll Framework for Restoration Projects
+**6 strategic enhancements that transform basic payroll into grant-compliant project management.**
 
-### 🔹 Recommended Enhancements
+### Recommended Enhancements
 
 | Feature | Purpose | Formula / Example |
 |----------|----------|-------------------|
@@ -150,60 +151,21 @@ Source: `Restoration,Welding,Painting,Electrical,Carpentry,Masonry`
 | **Safety & Training Logs** | Record certifications like OSHA or site‑specific hazard training (e.g., contaminated soil handling). | Checkbox/Dropdown field |
 | **Permit References** | Cross‑reference hours and activities with corresponding restoration or environmental permits. | Text reference or hyperlink field |
 
-### 🧩 Why These Additions Matter
-These project enhancements would make the payroll tracker especially useful for 
-**historic preservation and grant‑funded restoration projects**, such as lighthouse or heritage site work.
+### Why These Matter for Restoration Projects
+These project enhancements would make the payroll tracker especially useful for **historic preservation and grant‑funded restoration projects**, such as lighthouse or heritage site work.
 
-A standard payroll table typically includes columns for contractors names, hours worked, hourly rates, and total pay.
-However, restoration wrok often required more robust documenation to satisy grant oversight, audit requirments, and preservation compliance.
-Incorporating a **Grant Funding Source** column allows each labor cost to be linked to a specific grant or funding program (for example, 
-a state preservation award or the Lighthouse Enviromental Program), improving accountability and reimbursment tracking. Adding 
-**Materials and Expense Allocations** fields helps connect payroll entries with related projects costs-such as permits, ferry transporation, or period-specific
-construction materials-offering a more accurate understanding of total restoration expenditures.
-Including a **Volunteer Hours** column enables seperation of paid labor from volunteer or in-kind contribuations, which is essential for grant documentation.
-Finally, extending the table with **Compliance and Safety Fields**, such as pevailiing wage certifications, OSHA training verification, and 
-permit reference numbers, ensures that the restoration effort meets state and federal requirments.
+**Standard payroll** (name, hours, rate, total) works for simple jobs. **Restoration projects** need robust documentation for:
 
-Together these would expand a basic Excel payroll sheet into a comprehensive financial and compliance management tool built for the complex conditions of hertijage restoration projects.
+Standard payroll tables (contractor, hours, rate, total) fall short for restoration work, which demands **robust documentation** for grant oversight, audits, and preservation compliance. **Grant Funding Source** columns link labor to specific programs (state awards, Lighthouse Environmental Program) for accountability. **Materials & Expense Allocation** connects payroll to permits, ferry costs, and period materials for true cost visibility. **Volunteer Hours** separate in-kind contributions essential for grant documentation. **Compliance & Safety Fields** (prevailing wage, OSHA, permits) ensure state/federal requirements are met—transforming basic Excel into a **comprehensive financial/compliance tool** for heritage restoration complexity.
 
-## Applying the System to Historical Restoration
-A structured Excel-based data management system like this one can provide vital oversight in complex preservation projects such as the Burrows Island Light Station restoration. In real-world applications, heritage projects often involve multiple funding sources, specialized contractors, and strict documentation needs—all of which exceed the capacity of a basic payroll table. While a standard payroll tracker records contractor names, hours worked, hourly rates, and total pay, historical restoration work demands far more robust recordkeeping.
+**Result:** Basic Excel sheet → **Comprehensive financial/compliance tool** built for heritage restoration complexity.
 
-These project enhancements would make the payroll tracker especially useful for historic preservation and grant‑funded restoration efforts, including lighthouse or heritage site work. When applied to a real-world heritage initiative like the Burrows Island Light Station restoration, these expanded payroll features transform a basic spreadsheet into a dynamic project management tool. Linking each entry to a Grant Funding Source allows restoration managers to track which expenses align with specific funding programs—crucial for projects supported by multiple preservation grants. The Materials and Expense Allocation fields provide clarity on how labor ties to tangible restoration tasks, such as specialized masonry work, site safety preparation, or the transport of historic materials to the island. Tracking Volunteer Hours separately acknowledges community contributions, which are often necessary to document in-kind support for nonprofit audits and grant matching requirements. Meanwhile, Compliance and Safety Fields ensure that all work meets federal and state preservation standards while maintaining a transparent audit trail.
+### Business Skills Demonstrated
 
+**Skills beyond formulas:**
+- Multi-source data aggregation and analysis
+- Creating audit-ready dashboards and reports
+- Cost allocation and KPI tracking across categories
+- Data validation and stakeholder-ready visualizations
 
-- **Improved transparency:** Links labor and expenses directly to funding sources, simplifying reimbursement and reporting to grant agencies.  
-- **Compliance readiness:** Tracks certifications, permits, and safety standards to ensure alignment with state and federal regulations.  
-- **Accurate cost allocation:** Connects payroll entries to material and expense categories for a full picture of restoration spending.  
-- **Grant eligibility support:** Provides clear documentation needed for audits, reimbursement claims, and ongoing grant funding.  
-- **Volunteer recognition:** Separates in‑kind and volunteer contributions, helping organizations quantify community support.  
-- **Streamlined communication:** Consolidates data for preservation teams, funders, and contractors into one accessible system.  
-
-Together, these additions expand a simple Excel payroll sheet into a comprehensive financial, compliance, and project‑tracking tool, purpose‑built for the complex conditions of heritage restoration. For the Burrows Island Light project, data management tools like this not only streamline administrative work but also strengthen stewardship of public funds, improve accountability across contractor teams, and preserve the integrity of one of Washington’s maritime landmarks. 
-
-## How to Use This Workbook for Your Own Projects
-
-A data management system like the **Burrows Island Light Station Payroll Tracker** demonstrates how spreadsheet tools can organize, record, and analyze complex restoration workflows.
-
-**Contractors Sheet**: Teams can document each contractor’s trade, hourly rate, and contact information — all essential for transparency in grant-funded projects.
-
-**Expenses Sheet**: This sheet links labor to specific site areas and materials, providing a clear record of costs for tasks such as masonry stabilization or roof replacement.
-
-**Data Input Sheet**: Daily logging is simplified through dropdown menus and standardized job types, ensuring consistent recordkeeping across all restoration phases.
-
-**Summary Sheet**: The summary aggregates payroll, expenses, and performance metrics, giving managers instant visibility into total labor costs, hours worked, and average rates.
-
----
-
-For a restoration project like **Burrows Island Light Station**, this structured approach makes it easier to:
-
-- Track qualified contractors  
-- Manage federally or state-funded grants  
-- Create accurate, audit-ready reports  
-
-By introducing this level of precision and accountability, even small preservation teams can manage heritage projects efficiently while maintaining compliance with historical and financial documentation standards.
-
----
-
-### Summary
-This project integrates applied, Excel-based data management practices with the operational needs of heritage preservation. It shows how structured digital workflows enhance fiscal oversight, regulatory compliance, and sustainable management of cultural restoration initiatives.
+**Perfect for:** Data Analysts, BI Analysts, Reporting Specialists, Analytics roles
