@@ -34,12 +34,13 @@
 - [Contractors Sheet Setup](#1-contractors-sheet-setup)  
 - [Expenses Sheet Setup](#2-expenses-sheet-setup)  
 - [Data Input Sheet Setup](#3-data-input-sheet-setup) 
-- [KPI Dashboard](#4-KPI-dashboard)
+- [KPI Dashboard](#4-kpi-dashboard)
 - [Key Formulas – Copy & Paste](#5-key-formulas--copy--paste-ready)  
 
-#### Application and Use Cases
-- [Expanded Payroll Framework for Restoration Projects](#7-expanded-payroll-framework-for-restoration-projects)
-  
+#### Business Intelligence & Analytics
+- [Expanded Payroll Framework for Restoration Projects](#expanded-payroll-framework-for-restoration-projects)
+- [BI Skills Demonstrated](#bi-skills-demonstrated)
+
 ***
 
 ## 1. Contractors Sheet Setup  
@@ -160,7 +161,7 @@ Standard payroll tables (contractor, hours, rate, total) fall short for restorat
 
 **Result:** Basic Excel sheet → **Comprehensive financial/compliance tool** built for heritage restoration complexity.
 
-### Business Skills Demonstrated
+### BI Skills Demonstrated
 
 **Skills beyond formulas:**
 - Multi-source data aggregation and analysis
